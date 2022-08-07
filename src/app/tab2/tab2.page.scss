@@ -1,0 +1,9 @@
+.display {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+.displayitem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}

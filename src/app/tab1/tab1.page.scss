@@ -1,9 +1,99 @@
-.display {
-  display:grid;
-  grid-template-columns: 5fr 2fr;
+.headertext {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  top: 100px;
+  display: initial;
 }
 
-.displayitem {
-  display:grid;
-  grid-template-columns: 2fr 1fr 1fr;
+ion-header {
+  padding: 2px 10px;
+
+  ion-button {
+    --border-radius: 200px;
+    --box-shadow: false;
+  }
+}
+
+ion-content {
+  position: fixed;
+  --background: url(../../assets/fundo.jpg) no-repeat;
+
+  ion-card {
+    border-radius: 15px;
+
+    ion-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.cardinfo {
+  top: 25%;
+}
+
+.cardclima {
+  display: grid;
+  width: 90%;
+  justify-content: end;
+  position: absolute;
+  text-align: right;
+}
+
+ion-slides ion-slide ion-col img {
+  width: 40px;
+}
+
+ion-slides ion-slide ion-col {
+  display: grid;
+}
+
+ion-slides ion-slide ion-col ion-label ion-icon {
+  position: absolute;
+  left: 1px;
+  align-self: center;
+  width: 14px;
+  color: aqua;
+}
+
+.slidetcor {
+  color: grey;
+  font-size: 16px;
+}
+
+.card2header {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+
+  .label {
+    color: grey;
+    font-size: 16px;
+  }
+}
+
+.card2sub {
+  font-size: 18px;
+}
+
+.card2prev {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.card2umi {
+  display: inline-flex;
+  color: aqua;
+  top: 0, 2px;
+  text-align: right;
+}
+
+.card2temp {
+  text-align: right;
+  font-size: 18px;
+}
+
+.card2temp2 {
+  display: flex;
+  gap: 5px;
 }

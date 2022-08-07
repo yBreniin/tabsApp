@@ -1,17 +1,100 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title style="text-align: center;">
+      Clima
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>Lençóis Paulista</ion-label>
+      <div style="display: flex;">
+        <ion-icon name="thermometer-outline" style="display: flex;"></ion-icon>
+        <ion-label>32°C</ion-label>
+      </div>
+    </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-card-content>
+      <div class="display">
+        <ion-label>Temperatura </ion-label>
+        <ion-label>17° 32°</ion-label>
+      </div>
+      <div class="display">
+        <ion-label>Chuva </ion-label>
+        <ion-label>0mm - 0%</ion-label>
+      </div>
+      <div class="display">
+        <ion-label>Vento </ion-label>
+        <ion-label>NNE - 14km/h</ion-label>
+      </div>
+      <div class="display">
+        <ion-label>Umidade </ion-label>
+        <ion-label>19% 64%</ion-label>
+      </div>
+      <div class="display">
+        <ion-label>Sol </ion-label>
+        <ion-label>06:46h 17:55h</ion-label>
+      </div>
+    </ion-card-content>
+
+    <ion-item>
+      <ion-label>Previsões</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="ion-text-wrap">
+        <ion-text>
+          <div class="displayitem">
+            <h3>Sex - 05/08</h3> <!-- Data -->
+            <h3>
+              <ion-icon name="arrow-down-outline"></ion-icon> <!-- Minima -->
+              16°
+              <ion-icon name="arrow-up-outline"></ion-icon> <!-- Maxima -->
+              31°
+            </h3>
+            <h3 style="text-align: center;">
+              <ion-icon name="water-outline"></ion-icon> <!-- Umidade -->
+              5%
+            </h3>
+          </div>
+        </ion-text>
+        <ion-text>
+          <div class="displayitem">
+            <h3>Sab - 06/08</h3> <!-- Data -->
+            <h3>
+              <ion-icon name="arrow-down-outline"></ion-icon> <!-- Minima -->
+              15°
+              <ion-icon name="arrow-up-outline"></ion-icon> <!-- Maxima -->
+              28°
+            </h3>
+            <h3 style="text-align: center;">
+              <ion-icon name="water-outline"></ion-icon> <!-- Umidade -->
+              5%
+            </h3>
+          </div>
+        </ion-text>
+        <ion-text>
+          <div class="displayitem">
+            <h3>Dom - 07/08</h3> <!-- Data -->
+            <h3>
+              <ion-icon name="arrow-down-outline"></ion-icon> <!-- Minima -->
+              16°
+              <ion-icon name="arrow-up-outline"></ion-icon> <!-- Maxima -->
+              32°
+            </h3>
+
+            <h3 style="text-align: center;">
+              <ion-icon name="water-outline"></ion-icon> <!-- Umidade -->
+              5%
+            </h3>
+          </div>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+
+  </ion-card>
+
 </ion-content>
