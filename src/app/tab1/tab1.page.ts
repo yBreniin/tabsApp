@@ -14,9 +14,13 @@ export class Tab1Page {
     autoplay: false,
   };
 
+  previsao={};
+
   constructor(private api: ApiService) {
     this.api.buscarPrevisao().subscribe(dados => {
+      // eslint-disable-next-line @typescript-eslint/dot-notation
       console.log(dados);
+      this.previsao = dados;
     });
   }
 
